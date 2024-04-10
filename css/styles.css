@@ -1,10 +1,11 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 body {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #menu {
@@ -15,7 +16,8 @@ body {
   padding-right: 2vw;
   height: 7vh;
   align-items: center;
-  background: linear-gradient(55deg, #1d193d 0%, rgba(128, 3, 3, 1) 100%);
+  /* background: linear-gradient(55deg, #1d193d 0%, rgba(128, 3, 3, 1) 100%); */
+  background: linear-gradient(55deg, #1d193d 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 #menu > li:not(:first-child) {
@@ -57,4 +59,98 @@ body {
 main {
     display: flexbox;
     flex-direction: row;
+}
+
+.article-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 4vw 6vw 4vw 6vw;
+  /* width: 90vw; */
+}
+
+.article-section .article-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: 2vw;
+  width: 25%;
+  background-color: #f4f4f4;
+  /* background-color:mintcream; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-box:hover .article-heading{
+  text-decoration-line: underline;
+  text-decoration-style:dashed ;
+  text-decoration-color: rgba(0, 0, 0, 0.2);
+}
+
+.article-box:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+}
+
+.article-heading {
+  font-size: calc(1.5vw + 0.5rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-top: 3vh;
+  color: rgb(77, 87, 97);
+}
+
+
+.article-image img{ 
+  max-width: 100%;
+
+  border: #000000;
+  border-radius: 10px;
+  border-style:groove;
+  z-index: 2;
+}
+
+.introductive-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw 6vw 4vw 6vw;
+}
+
+.introductive-section h1 { 
+  font-size: 2vw;
+}
+
+#introductive-image {
+  width: 50vh;
+  margin-left: 20vw;
+  margin-right: 3vw;
+}
+
+#introductive-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#stylized-hr {
+  margin: auto;
+  width: 70vw;
+  border: 0;
+  height: 2px;
+  background-color: black;
+}
+
+.article-title {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-top: 6vh;
+  color: rgb(77, 87, 97);
+  margin: auto;
+  text-align: center;
 }
